@@ -13,6 +13,26 @@ export default class DomMethods {
     }
   }
 
+  addNewBook() {
+    document.getElementById('book-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const id = this.books.length;
+      const book = document.getElementById('title').value;
+      const author = document.getElementById('author').value;
+      if (book && author) {
+        this.books.push({ id, book, author });
+        document.getElementById('error').textContent = '';
+        localStorage.setItem('books', JSON.stringify(this.books));
+        window.dispatchEvent(new Event('storage'));
+        document.getElementById('title').value = '';
+        document.getElementById('author').value = '';
+      } else {
+        document.getElementById('error').textContent = 'Provide all details';
+        document.getElementById('error').style.setProperty('color', 'red');
+      }
+    });
+  }
+
   loadBooks() {
     const el = document.querySelector('.book-list ul');
     el.innerHTML = '';
