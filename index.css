@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500&family=Poppins&family=Roboto:wght@700&display=swap');
+
+/* stylelint-disable  no-descending-specificity */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'sora', serif; /* stylelint-disable-line */
+  background: #fff;
+  color: rgb(51 50 50 / 89%);
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+  overflow-x: hidden !important;
+  position: relative;
+}
+
+.container {
+  margin: 0 10%;
+}
+
+/* top nav */
+
+.top-nav,
+.top-nav ul {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.top-nav {
+  border: 1px solid gray;
+  margin: 20px;
+  padding: 0 20px;
+}
+
+.top-nav h1 {
+  font-size: 2em;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: system-ui;
+  flex-basis: 60%;
+}
+
+.top-nav ul {
+  list-style: none;
+  flex-basis: 40%;
+  justify-content: end;
+}
+
+.top-nav ul li span {
+  font-size: 1.4em;
+  text-transform: capitalize;
+  cursor: pointer;
+  padding: 0 1em;
+  white-space: nowrap;
+}
+
+.top-nav ul li:last-child span {
+  padding-right: 0;
+}
+
+#list-link span {
+  color: blue;
+}
+
+.top-nav ul li span:hover {
+  color: blue;
+}
+
+.top-nav ul li:not(:last-child) span {
+  border-right: 1px solid black;
+}
+
+.top-date {
+  display: flex;
+  justify-content: end;
+}
+
+.top-date span {
+  font-size: 1em;
+  margin-right: 1em;
+  font-style: italic;
+}
+
+#list {
+  display: flex;
+}
+
+#new,
+#contact {
+  display: none;
+}
+
+#list,
+#contact,
+#new {
+  height: 80%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#list > div,
+#contact > div,
+#new > div {
+  width: 100%;
+}
+
+/* book list */
+
+#list h2 {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.book-list ul {
+  border: 1px solid rgba(128, 128, 128, 0.333);
+  padding: 1em;
+  list-style: none;
+  border-radius: 1em;
+}
+
+.book-list ul li {
+  padding: 0.5em 0;
+  display: flex;
+}
+
+.book-list ul li:nth-child(odd) {
+  background: rgba(128, 128, 128, 0.101);
+}
+
+.book-list ul li span:nth-child(1) {
+  display: none;
+}
+
+.book-list ul li span:nth-child(2) {
+  font-size: x-large;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.book-list ul li span:nth-child(2):hover {
+  color: blue;
+}
+
+.book-list ul li span:nth-child(3) {
+  margin-left: auto;
+}
+
+.book-list ul li span {
+  padding: 0 20px;
+}
+
+.book-list ul input[type=button] {
+  background-color: white;
+  border-radius: 5px;
+  border: 2px solid #f44336;
+  color: red;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.book-list ul input[type=button]:hover {
+  background-color: red;
+  color: white;
+}
+
+/* new book */
+
+#new > div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#new h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+#book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  font-size: 30px;
+}
+
+.in-put {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  width: 327px;
+  height: 48px;
+  margin-top: 20px;
+  margin-left: 8px;
+  padding-left: 8px;
+}
+
+.form-book {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: flex-end;
+  width: 25%;
+}
+
+.btn button {
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* contact us section */
+
+#contact {
+  text-align: center;
+  padding: 30px 0;
+  margin: 30px 0;
+  border-radius: 30px;
+  font-size: 30px;
+}
+
+#contact h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+#contact p {
+  width: auto;
+}
+
+/* contact  */
+
+#contact ul {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 15%;
+  margin-top: 2%;
+}
+
+#contact ul a {
+  text-decoration: none;
+  color: black;
+}
+
+#contact li {
+  margin: 2% 3%;
+}
+
+/* footer section */
+
+footer {
+  font-size: 30px;
+  align-items: center;
+  text-align: center;
+  font-weight: 400;
+}
+
+.foot {
+  padding: 10px 0;
+  border: black solid 2px;
+  margin: 1% 1%;
+}
+
+.bottom {
+  background-color: black;
+  height: 40px;
+  margin-top: 10px;
+}

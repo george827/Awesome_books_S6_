@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" type="module"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="top-nav">
+                <h1>
+                    awesome books
+                </h1>
+                <ul>
+                    <li id="list-link">
+                        <span>list</span>
+                    </li>
+                    <li id="new-link">
+                        <span>add new</span>
+                    </li>
+                    <li id="contact-link">
+                        <span>contact</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-date">
+                <span id="date">march 19th 2022, 09:45:30 am</span>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <section id="list">
+            <div>
+                <h2>All awesome books</h2>
+                <div class="book-list">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="new">
+            <div>
+                <h2>Add a new book</h2>
+                <form id="book-form">
+                    <div class="form-book">
+                        <input type="text" id="title" required
+                            maxlength="40" name="Title" placeholder="Title of the book" 
+                            size="30" class="in-put"><br>
+                    </div>
+                    <div class="form-book">
+                        <input type="text" id="author" class="in-put" required
+                            maxlength="40"  name="Author" placeholder="Author of the book" 
+                            size="30" ><br>
+                    </div>
+                    <div class="btn">
+                        <button type="submit" id="add-bk">Add</button>
+                    </div>
+                    <span id="error"></span>
+                </form>
+            </div>
+        </section>
+        <section id="contact">
+            <div>
+                <h2>CONTACT INFORMATION</h2>
+                <div class="contact-info">
+                    <p>Do you have any questions or just want to say "hello" <br>
+                        you can reach out to us on!
+                    </p>
+                    <ul>
+                        <li>Our email <a href="#">awesomebooks@gmail.com</a></li>
+                        <li>Call us on: 002457681</li>
+                        <li> Or come to our office Elm Street 22, 88345 san
+                            francisco</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container foot">
+            <span> © copyright </span>
+            <span>Awesome books</span> <br>
+                <span>@2022</span>
+                <span>project by george</span>
+        </div>
+        <div class="bottom">
+            
+        </div>
+    </footer>
+</body>
+</html>
